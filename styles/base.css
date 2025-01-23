@@ -5,6 +5,10 @@
   --accent-color-two: #ddfdfe;
   --accent-color-three: #ffb8d1;
   --font-color-primary: #333333;
+  --font-dark-gray: #2C2C2C;
+  --font-medium-gray: #4A4A4A;
+  --font-gray: #6B6B6B;
+  --font-white: #ffffff;
   --gap-10: 10px;
 }
 
@@ -59,6 +63,11 @@ footer {
   padding: 0.75rem;
   font-family: "Raleway", serif;
   font-weight: 500;
+}
+
+.navigation a:hover {
+  color: var(--font-medium-gray);
+  text-decoration: underline;
 }
 
 main {
