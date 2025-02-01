@@ -21,7 +21,7 @@
   }
 
   main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr, minmax(1fr, 1fr));
   }
 
   main h2 {
@@ -29,9 +29,10 @@
   }
 
   figure img {
-    width: calc(90vw /3);
+    max-width: calc(90vw /3);
     height: calc(100vh /3);
     object-fit: cover;
+    
   }
 
 
