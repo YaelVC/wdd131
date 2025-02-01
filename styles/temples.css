@@ -98,15 +98,14 @@ main {
 }
 
 main h2 {
-    grid-column: 1 / -1;
-    grid-row: 1;
-
-  }
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
 
 figure img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 400px; /* Altura fija */
+  object-fit: cover; /* Ajustar la imagen para llenar el contenedor */
 }
 
 figcaption {
