@@ -10,6 +10,6 @@ year.innerHTML = `${today.getFullYear()}`;
 lastModify.innerHTML = `${document.lastModified}`
 
 hamburger.addEventListener('click', () => {    
-    navlinks.classList.toggle('active');
+    navlinks.classList.toggle('show');
 })
 
