@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Space+Mono:wght@400;700&display=swap");
-
 :root {
-  --primary-color: #e0067e;
-  --secondary-color: #f4c542;
+  --primary-color: #c9056e;
+  --secondary-color: #c9a000;
   --accent-color: #e74c3c;
-  --text-color: #333;
+  --text-color: #f0f0f0;
   --bg-color: #1a0b16;
   --card-bg: #ffffff;
+  --card-text: #1a1a1a;
 }
 
 * {
@@ -57,7 +56,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: var(--bg-color);
+  color: var(--card-text);
   text-decoration: none;
   padding: 1rem 1.5rem;
   text-align: center;
@@ -98,6 +97,7 @@ h1 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  color: var(--card-text);
 }
 
 .title {
@@ -105,6 +105,7 @@ h1 {
   padding: 0.5rem;
   border-radius: 8px 8px 0 0;
   height: 3rem;
+  color: white;
 }
 
 .aboutMe {
@@ -152,18 +153,6 @@ h1 {
   grid-column: 1 / -1;
 }
 
-h3 {
-  text-align: center;
-}
-
-.aboutMe h3 {
-  grid-column: 1 / -1;
-}
-
-hr {
-  margin: 0.5rem 4rem;
-}
-
 .aboutMe h3 {
   text-align: center;
   grid-column: 1 / -1;
@@ -176,7 +165,7 @@ hr {
 
 .card h2 {
   font-family: "Raleway", sans-serif;
-  color: var(--secondary-color);
+  color: inherit;
   text-align: center;
 }
 
