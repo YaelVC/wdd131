@@ -134,13 +134,28 @@ h1 {
   gap: 1rem;
 }
 
-.descriptionCity img {
+.descriptionCity figure {
   grid-column: 1;
+  margin: 0;
+  width: fit-content;
+}
+
+.descriptionCity img {
   max-width: 400px;
+  display: block;
 }
 
 .descriptionCity p {
   grid-column: 2;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--card-text);
+  margin-top: 0.5rem;
+  word-wrap: break-word;
 }
 
 .card-content {
