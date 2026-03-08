@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #e0067e;
+  --secondary-color: #f4c542;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #1a0b16;
+  --card-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--card-bg);
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--bg-color);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 0.3rem 1.2rem;
+  display: inline-block;
+  scale: calc(1.1);
+}
+
+main {
+  max-width: 100%;
+  margin: 2rem 3rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  grid-column: 1 / -1;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.title {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
+  height: 3rem;
+}
+
+.aboutMe {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.pharagraph {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.profile-photo {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 200px;
+  margin-left: 1.5rem;
+}
+
+.descriptionCity {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.descriptionCity img {
+  grid-column: 1;
+  max-width: 400px;
+}
+
+.descriptionCity p {
+  grid-column: 2;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+
+.title-card {
+  grid-column: 1 / -1;
+}
+
+h3 {
+  text-align: center;
+}
+
+.aboutMe h3 {
+  grid-column: 1 / -1;
+}
+
+hr {
+  margin: 0.5rem 4rem;
+}
+
+.aboutMe h3 {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.aboutMe hr {
+  margin: 0.5rem 4rem;
+  grid-column: 1 / -1;
+}
+
+.card h2 {
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.card img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.card ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.lastModification {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #course-title {
+    font-size: 1.2rem;
+  }
+}
