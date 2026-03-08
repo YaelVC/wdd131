@@ -1,6 +1,7 @@
 :root {
   --primary-color: #c9056e;
-  --secondary-color: #c9a000;
+  --secondary-color: #8a6d00;
+  --nav-color: #006847;
   --accent-color: #e74c3c;
   --text-color: #f0f0f0;
   --bg-color: #1a0b16;
@@ -38,7 +39,7 @@ header {
 }
 
 nav {
-  background-color: var(--secondary-color);
+  background-color: var(--nav-color);
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: var(--card-text);
+  color: white;
   text-decoration: none;
   padding: 1rem 1.5rem;
   text-align: center;
@@ -64,8 +65,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: black;
-  color: white;
+  background-color: #d4af37;
+  color: #1a1a1a;
   border-radius: 50px;
   padding: 0.3rem 1.2rem;
   display: inline-block;
@@ -229,7 +230,7 @@ footer p {
 
 .lastModification {
   font-size: 0.9rem;
-  color: var(--secondary-color);
+  color: #ffd700;
   font-weight: 900;
 }
 
