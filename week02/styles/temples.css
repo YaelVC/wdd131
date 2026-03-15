@@ -1,0 +1,128 @@
+:root {
+  --bg-color: #f0ffc9;
+  --bg-color-secondary: #a9da88;
+  --text-color: #72243d;
+  --accent-color: #e74c3c;
+  --title-color: #62997a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1rem;
+  background-color: var(--bg-color);
+}
+
+header h1 {
+  color: var(--text-color);
+  text-align: left;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Mobile View  */
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: var(--text-color);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  background-color: var(--bg-color-secondary);
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/* Styles main */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1rem;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+}
+
+figure img {
+  align-self: center;
+  width: 98%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Style for medium devices */
+@media (min-width: 768px) and (max-width: 1100px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+
+  figure img {
+    height: 250px;
+  }
+}
