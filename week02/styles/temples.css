@@ -17,8 +17,6 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   padding: 1rem;
   background-color: var(--bg-color);
 }
@@ -73,6 +71,11 @@ header h1 {
   background-color: var(--bg-color-secondary);
   color: var(--text-color);
   font-weight: 700;
+}
+
+.open a {
+  display: flex;
+  justify-content: center;
 }
 
 /* Styles main */
