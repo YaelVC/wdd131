@@ -1,10 +1,8 @@
 /* stylelint-disable-next-line */
 :root {
-  --bg-color: #f0ffc9;
-  --bg-color-secondary: #a9da88;
-  --text-color: #72243d;
-  --accent-color: #e74c3c;
-  --title-color: #62997a;
+  --bg-color: #80b3ff;
+  --bg-color-secondary: #dce4f7;
+  --text-color: #331327;
 }
 
 * {
