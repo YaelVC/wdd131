@@ -51,6 +51,11 @@ header {
   content: "❌";
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -67,6 +72,7 @@ header {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .navigation a:hover {
